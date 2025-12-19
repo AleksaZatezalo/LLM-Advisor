@@ -25,15 +25,12 @@ A fully offline RAG (Retrieval-Augmented Generation) system with a Django backen
 
 ```bash
 # 1. Start all services
-docker-compose up -d
+docker-compose up -d --build
 
 # 2. Pull an LLM model (first time only, ~4GB download)
 docker exec -it rag-ollama ollama pull llama3.2
 
-# 3. Run Django migrations
-docker exec -it rag-backend python manage.py migrate
-
-# 4. Access the application
+# 3. Access the application
 open http://localhost:3000
 ```
 
