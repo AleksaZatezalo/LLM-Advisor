@@ -1,0 +1,20 @@
+# Django
+Django>=4.2,<5.0
+djangorestframework>=3.14
+django-cors-headers>=4.3
+
+# PDF Processing
+pymupdf>=1.23  # fitz
+pdfplumber>=0.10
+
+# Embeddings (offline)
+sentence-transformers>=2.2
+
+# Vector Store
+chromadb>=0.4
+
+# LLM Client
+httpx>=0.25
+
+# Utilities
+python-dotenv>=1.0
